@@ -7,9 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   show=false;
+  log=[]
 
   onClick() {
     this.show = !this.show
+    this.log.push(Date());
   }
   
 }

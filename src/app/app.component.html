@@ -12,6 +12,10 @@
       <hr>
       <button (click)="onClick()">Display Details</button>
       <p *ngIf="show">Have a great day!</p>
+      <h1>Log</h1>
+      <ul *ngFor="let item of log; index as i">
+        <li> Button clicked at: {{item}}</li>
+      </ul>
     </div>
   </div>
 </div>
