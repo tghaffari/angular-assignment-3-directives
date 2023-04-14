@@ -12,6 +12,13 @@
       <hr>
       <button (click)="onClick()">Display Details</button>
       <p *ngIf="show">Have a great day!</p>
+      <h1>Log</h1>
+      <ul *ngFor="let item of log; index as i">
+        <li 
+        [ngStyle]="i >=4 && {backgroundColor: 'blue'}"
+        [ngClass]="{'text-color': i>=4 }"
+        > Button clicked at: {{item}}</li>
+      </ul>
     </div>
   </div>
 </div>
