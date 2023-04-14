@@ -21,5 +21,11 @@ export class AppComponent {
   getBackground(){
     console.log(this.log)
   }
+
+  // Max's solution 
+  // showSecret = false;
+ // onToggleDetails(){
+//     this.showSecret = !this.showSecret
+//   }
   
-}
+ }
