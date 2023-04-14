@@ -15,7 +15,7 @@ export class AppComponent {
 
   onClick() {
     this.show = !this.show
-    this.log.push(Date());
+    this.log.push(new Date());
   }
 
   getBackground(){
