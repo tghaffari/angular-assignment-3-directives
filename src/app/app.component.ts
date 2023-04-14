@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'assignment-3';
+  show=false;
+
+  onClick() {
+    this.show = !this.show
+  }
+  
 }
